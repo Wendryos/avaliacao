@@ -24,8 +24,11 @@ class PostController extends Controller
         $data    = new LengthAwarePaginator($currentPageSearchResults, count($col), $perPage, $currentPage,['path' => LengthAwarePaginator::resolveCurrentPath()] );
         return view('pages.index', ['posts' => $data]);
 
-
     }
   
+
+    function show($id) {
+        dd($id);
+    }
 
 }

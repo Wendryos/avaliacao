@@ -16,4 +16,5 @@ use App\Http\Controllers\PostController;
 
 
 
-Route::get('/', [PostController::Class, 'index'])->name('index');
+Route::get('/', [PostController::Class, 'index'])->name('posts.index');
+Route::get('/show/{id}', [PostController::Class, 'show'])->name('posts.show');
