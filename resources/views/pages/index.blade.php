@@ -32,10 +32,12 @@
     width: 100%;
     position: fixed;
     overflow-y: auto;
+
     background: rgb(37, 37, 37);
 }
 
 .__ContainerPosts__ .__ObjectPost__ {
+    
     background-image: linear-gradient(to right, #fd746c 0%, #ff9068  51%, #fd746c  100%);
     transition: 0.5s;
     background-size: 200% auto;
@@ -116,15 +118,16 @@ font-weight: bold;
     border-radius: 4px; 
 
     }
+    .__footer i { position: relative; top: 1px; left: 1px; font-size: 16px; }
+
 
 .__footer a:hover, .__footer a:focus { 
     position: relative;
     top: 3px;
     box-shadow: 0 1px 0px rgb(2, 73, 26), inset 0 0 25px rgba(0,0,255,0.3); 
-  
-   
-
 }
+
+
 
 
 .__ObjectPostContent__ { display: flex; justify-content: center; align-items: center;    padding-bottom: 15px; }
