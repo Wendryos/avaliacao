@@ -4,7 +4,7 @@
    Este projeto é uma aplicação web que usa como linguagem principal o PHP, consiste em listagem e exibição de posts provindas de uma API.
 </p>
 
-
+---
 
 ## Pré-requisitos
 * [Git](https://git-scm.com) para clonar o repositório.
@@ -15,7 +15,7 @@ A versão da Framework Laravel utilizada no projeto é a 8.5, portanto para que 
 
 ## Iniciando a aplicação
 
-Você pode acessar e testar esta aplicação online [acessando este site](http://avaliacao.zalliant.com.br).  
+Você pode acessar e testar esta aplicação online [acessando este site](http://avaliacao.zalliant.com.br){:target="_blank" rel="noopener"}.  
 
 ---
 Iniciando diretamente do seu ambiente:
@@ -27,13 +27,13 @@ $ cd avaliacao
 * **Execute a aplicação**
 $ php artisan serve
 <h3 align="center"> 
-O servidor inciará na porta:8000 - acesse http://localhost:8000 ou http:127.0.0.1:8000 </h3>
+O servidor inciará na porta:8000 - acesse http://localhost:8000 ou http://127.0.0.1:8000 </h3>
 
 
 
 
 ---
-### Perguntas
+## Perguntas
 * **1. Descreva possíveis otimizações de performance que você poderia fazer no seupróprio código.**
 - Adaptar melhorias de envio dos registros para a view carregando a API uma única vez e assim usando para todo o projeto apartir de uma salva. 
 
