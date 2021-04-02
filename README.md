@@ -4,8 +4,8 @@
    Este projeto é uma aplicação web que usa como linguagem principal o PHP, consiste em listagem e exibição de posts provindas de uma API.
 </p>
 
----
 
+---
 ## Pré-requisitos
 * [Git](https://git-scm.com) para clonar o repositório.
 * [PHP](https://www.php.net/) ou um servidor como o [Xampp](https://www.apachefriends.org/pt_br/index.html), [Wamp](https://www.wampserver.com/en/) e outros.
@@ -32,13 +32,11 @@ $ php artisan serve
 O servidor inciará na porta:8000 - acesse http://localhost:8000 ou http://127.0.0.1:8000 </h3>
 
 
-
-
 ---
 ## Perguntas
-* **1. Descreva possíveis otimizações de performance que você poderia fazer no seupróprio código.**
+#### 1. Descreva possíveis otimizações de performance que você poderia fazer no seupróprio código.
 - Adaptar melhorias de envio dos registros para a view carregando a API uma única vez e assim usando para todo o projeto apartir de uma salva. 
 
-* **2. O que você poderia ter melhorado?**
+#### 2. O que você poderia ter melhorado?**
 - Melhorar a paginação, deixando - a assincrona.
 - A estilização de acordo ao que for proposto, com talvez um load inicial para exibir os registros depois que a página estiver carregada.
