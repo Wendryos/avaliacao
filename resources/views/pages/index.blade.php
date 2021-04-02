@@ -32,7 +32,6 @@
     width: 100%;
     position: fixed;
     overflow-y: auto;
-
     background: rgb(37, 37, 37);
 }
 
@@ -49,7 +48,8 @@
     margin-bottom: 25px;
     border-radius: 5px;
     cursor: default;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 0 #cf1208, 0 0 25px rgba(0,0,0,0.5);
+    
 }
 
 
@@ -82,7 +82,7 @@
 
 
 .__user { 
-    width: 40px; height: 40px;
+    width: 44px; height: 40px;
     font-weight: bold;
     background: rgb(0, 0, 0); 
     border-radius: 100%;
