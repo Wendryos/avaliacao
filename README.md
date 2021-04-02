@@ -15,7 +15,7 @@ A versão da Framework Laravel utilizada no projeto é a 8.5, portanto para que 
 
 ## Iniciando a aplicação
 
-Você pode acessar e testar esta aplicação online [acessando este site](http://avaliacao.zalliant.com.br){:target="_blank" rel="noopener"}.  
+Você pode acessar e testar esta aplicação online [acessando este site](http://avaliacao.zalliant.com.br).  
 
 ---
 Iniciando diretamente do seu ambiente:
