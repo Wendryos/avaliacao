@@ -26,7 +26,7 @@ class PostController extends Controller
         $perPage = 10;
         $currentPageSearchResults = $col->slice(($currentPage - 1) * $perPage, $perPage)->all();
         $data    = new LengthAwarePaginator($currentPageSearchResults, count($col), $perPage, $currentPage,['path' => LengthAwarePaginator::resolveCurrentPath()] );
-        return view('pages.index', ['posts' => $data]);
+        return view('pages.view1', ['posts' => $data]);
 
     }
   
@@ -36,9 +36,9 @@ class PostController extends Controller
       if (is_numeric($id) && ($id > 0 && $id <=100 )) :
             $a   = $this->data;
             $i   = ($id - 1); 
-            return view('pages.show', ['item' => $a[$i]]);
+            return view('pages.view2', ['item' => $a[$i]]);
        else:  
-            return view('pages.show', ['error'=> 'Não foi possível localizar esta postagem...']);
+            return view('pages.view2', ['error'=> 'Não foi possível localizar esta postagem...']);
        endif;
 
 

@@ -1,10 +1,4 @@
 
-@extends('layouts.app')
-
-@push('styles')
-    
-     <style>
-
         * { margin: 0; padding: 0; }
         body, html { width: 100%; height: 100%; }
         body, li, a, input, button, textarea, div, p { font-family: 'Poppins', sans-serif; }
@@ -36,7 +30,6 @@
 }
 
 .__ContainerPosts__ .__ObjectPost__ {
-    
     background-image: linear-gradient(to right, #fd746c 0%, #ff9068  51%, #fd746c  100%);
     transition: 0.5s;
     background-size: 200% auto;
@@ -49,7 +42,6 @@
     border-radius: 5px;
     cursor: default;
     box-shadow: 0 5px 0 #cf1208, 0 0 25px rgba(0,0,0,0.5);
-    
 }
 
 
@@ -109,11 +101,12 @@ font-weight: bold;
 .__content   { text-align: center; }
 .__footer    { display: flex; justify-content: center; align-items: center; }
 .__footer a  { 
-    background: rgb(37, 219, 98); 
+    /* background: rgb(37, 219, 98); */
+    background: rgb(135, 193, 226); 
     color: #fff; 
     font-weight: bold; 
     padding: 10px; 
-    box-shadow: 0 5px 0px rgb(2, 73, 26), inset 0 0 25px rgba(0,0,255,0.3); 
+    box-shadow: 0 5px 0px rgb(59, 78, 163), inset 0 0 25px rgba(0,0,255,0.3); 
     text-shadow: 0 0 3px rgba(0,0,0,0.7);
     border-radius: 4px; 
 
@@ -151,71 +144,3 @@ font-weight: bold;
     outline: none!important;
     box-shadow:  none!important;
  }
-
-
-    </style>    
-
-
-@endpush
-
-
-
-@section('content')
-<div class="__ContainerPosts__">
-    @foreach ($posts as $post)
-        <ul class="__ObjectPost__"> 
-            <div class="__ObjectPostHeader__">
-                <li class="__user" title="Usuário: {{ $post['userId']     }}">  
-                    {{ $post['userId']     }}     </li>           
-                <li class="__title">                {{ $post['title']      }}     </li>
-                <li class="__id">                  #{{ $post['id']         }}     </li>
-
-            </div>
-
-             <div class="__ObjectPostContent__">
-                <li class="__content"> {{ $post['body']   }} </li>       
-            </div>
-
-             <div class="__ObjectPostFooter__">
-                <li class="__footer"> <a href="{{ route('posts.show', $post['id']) }}"> Ver postagem <i class="fas fa-arrow-right"></i> </a> </li>       
-            </div>
-
-
-        </ul>
-    @endforeach	
-</div>
-
-
-     <div class="__ContainerPagination__">
-        {{ $posts->render() }}
-    </div>
-
-@endsection
-
-
-
-
-
-
-
-@push('script')
-    
-    <script>
- $(document).ready(function(){    
-
-
-    $('.__content').each(function() {
-        var text     = $(this).html();
-        var newHtml = text.substring(0, 72) + '...';
-        $(this).html(newHtml);    
-
-    });
-   
-
-
- 
-});
-    </script>
-
-@endpush
-
