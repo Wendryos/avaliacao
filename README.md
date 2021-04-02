@@ -24,6 +24,8 @@ Iniciando diretamente do seu ambiente:
 $ git clone https://github.com/Wendryos/avaliacao.git ou $ gh repo clone Wendryos/avaliacao
 * **Acesse a pasta do projeto no terminal/cmd**
 $ cd avaliacao
+* **Instale as dependências**
+$ composer install
 * **Execute a aplicação**
 $ php artisan serve
 <h3 align="center"> 
